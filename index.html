@@ -3,46 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autotorba</title>
+    <!-- #region modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- #endregion modern normalize -->
+    <!-- #region file fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- #endregion file fonts -->
+    <!-- #region file style -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- #endregion file style -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autotorba</title>
   </head>
   <body>
-    <header>
-      <a href="https://autotorba.com.ua">
-        <img
-          src="./images/logo-autotorba.svg"
-          alt="autotorba logo"
-          width="80"
-        />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="">Каталоги</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Особистий кабінет</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Контакти</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Інфо</a></li>
-        </ul>
-      </nav>
+    <!-- #region header 1-->
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo">
+            <img src="./images/logo.png" width="50" alt="logo-autotorba"
+          /></a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-link">Autotorba</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-link">Polcar</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-link">Signeda</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-link">USA</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:autotorba@gmail.com"
+                >autotorba@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="contacts-link" href="tel:+380679863098"
+                >(067) 986-30-98</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button class="burger-btn" type="button">
+          <svg class="icon-burger" width="25" height="25">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button">
+            <svg class="close-svg-modal" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="nav-list-mobile">
+              <li class="nav-list-mobile-item">
+                <a href="./index.html" class="nav-link-mobile">Autotorba</a>
+              </li>
+              <li class="nav-list-mobile-item">
+                <a href="./index.html" class="nav-link-mobile">Polcar</a>
+              </li>
+              <li class="nav-list-mobile-item">
+                <a href="./index.html" class="nav-link-mobile">Signeda</a>
+              </li>
+              <li class="nav-list-mobile-item">
+                <a href="./index.html" class="nav-link-mobile">USA</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="contacts-list-mobile-menu">
+              <li class="contacts-item-modal">
+                <a class="contacts-link-email" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contacts-link-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social-mobile">
+            <ul class="social-list-mobile">
+              <li class="social-mobile-list-item">
+                <a href="" class="social-mobile-list-link">
+                  <svg class="soc-svg-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mobile-list-item">
+                <a href="" class="social-mobile-list-link">
+                  <svg class="soc-svg-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mobile-list-item">
+                <a href="" class="social-mobile-list-link">
+                  <svg class="soc-svg-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mobile-list-item">
+                <a href="" class="social-mobile-list-link">
+                  <svg class="soc-svg-mobile" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- endregion header -->
     <main>
-      <p>Ласкаво просимо відвідати наші онлайн склади</p>
-      <p>Інтернет магазин Autotorba - Це база автокаталогів</p>
-      <p>Поставляємо автозапчастини для будь-якої марки авто</p>
-      <p>Доставка будь-який населепний пункт чи регіон</p>
-      <p>Ми працюємо безпосередньо з компаніями-виробниками</p>
-      <p>Пропонуємо співпрацю СТО, Магазинам, Пдприємцям</p>
+      <!-- #region hero 1-->
+      <section class="section-hero">
+        <div class="container"></div>
+      </section>
+      <!-- #endregion hero 1 -->
+      <!-- #region ethics 2 -->
+      <section class="section-ethics">
+        <div class="container"></div>
+      </section>
+      <!-- #endregion ethics 2 -->
+      <!-- #region our team 3 -->
+      <section class="team-section">
+        <div class="container"></div>
+      </section>
+      <!-- #endregion our team 3 -->
+      <!-- #region our potfolio 4 -->
+      <section class="portfolio-section">
+        <div class="container"></div>
+      </section>
+      <!-- endregion our portfolio 4 -->
     </main>
-    <footer>
-      <p>
-        &copy;2025 Autotorba - магазин автозапчастин. Україна, Вараш, тел: 067
-        986 30 98. e-mail: autotorba@gmail.com
-      </p>
-    </footer>
+    <!-- #region footer -->
+
+    <footer class="page-footer"></footer>
+    <div class="container footer-container"></div>
+    <!-- #endregion footer -->
   </body>
 </html>
